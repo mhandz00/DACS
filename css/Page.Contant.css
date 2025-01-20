@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  color: #fff8f8;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1389px;
+}
+
+article {
+  margin: auto;
+  width: 100vw;
+  max-width: 920px;
+  min-width: 640px;
+  position: relative;
+  z-index: 1;
+}
+
+section.card {
+  border-radius: 24px 24px 24px 48px;
+  padding: 48px 48px 48px 308px;
+  margin: 84px 0;
+  box-shadow: 5px 0 0 0 rgba(204, 204, 204, 0.3),
+    -5px 0 0 0 rgba(204, 204, 204, 0.3),
+     0 5px 0 0 rgba(204, 204, 204, 0.3);
+}
+
+section.card .text-content p {
+  margin: 25px 0 24px;
+  
+}
+
+section.card .text-content a {
+  border: 3px solid #f2f2f2;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 16px 32px;
+  border-radius: 12px;
+  transition: 400ms all;
+}
+
+section.card .text-content a:hover {
+  background: #051c5e;
+  color: white;
+}
+
+section.card .visual {
+  width: 240px;
+  height: 100%;
+  position: absolute;
+  top: -24px;
+  left: 24px;
+  overflow: hidden;
+}
+
+section.card .visual img {
+  height: 110%;
+}
+
+.timeline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 9%;
+}
+
+.timeline .timeline-row {
+  display: flex;
+  column-gap: 64px;
+}
+
+
+.timeline-column .timeline-box {
+  position: relative;
+  border-left: 2px solid #0ef;
+}
+
+.timeline-box .timeline-content {
+  padding-left: 27px;
+}
+
+
+.timeline-column .title {
+  position: relative;
+  display: inline-block;
+  font-size: 28px;
+  margin: 32px 0 16px 30px; 
+}
+
+
+.timeline-content .content {
+  padding: 24px;
+  border: 2px solid #0ef;
+  border-radius: 8px;
+  margin-bottom: 32px;
+}
+
+.timeline-content .content .title2 {
+  font-size: 16px;
+  color: #0ef;
+}
+
+
+
+.timeline-content .content h3 {
+  margin: 8px 0;
+}
+
+.timeline-content .content p {
+  font-size: 14px;
+}
+
+.animate {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #1f242d;
+  animation: show-right 1s ease forwards;
+  
+}
+
+@keyframes show-right {
+  100% {
+    width: 0;
+  }
+}
+
+
+@media all and (max-width: 1100px) {
+  article {
+    width: 100%;
+  }
+  section.card {
+    min-width: 100%;
+  }
+}
+
+@media all and (max-width: 720px) {
+  section.card {
+    margin: 64px 0;
+    padding: 88px 36px 36px;
+    flex-direction: column;
+    border-radius: 24px;
+  }
+
+  section.card .text-content h3 {
+    max-width: calc(100% - 150px);
+    font-size: 1em;
+  }
+
+  section.card .text-content p,
+  section.card .text-content a {
+    font-size: 0.8em;
+  }
+
+  section.card .visual {
+    width: 150px;
+    height: 150px;
+    right: 16px;
+    left: auto;
+    border-radius: 50%;
+  }
+
+  section.card .visual img {
+    width: 100%;
+    height: auto;
+  }
+}

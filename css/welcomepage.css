@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+.nav-container {
+  padding-top: 22px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo {
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+}
+.logo span {
+  color: #077b32;
+  text-shadow: 0 0 10px #077b32;
+}
+
+section {
+  width: 100%;
+  height: 90%;
+}
+.main-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.main-container .image {
+  width: 500px;
+  height: 80vh;
+  border-radius: 100%;
+  overflow: hidden;
+  box-shadow: 0 0 50px #077b32;
+}
+.main-container .image img {
+  width: 100%;
+  height: 100%;
+}
+.main-container .content {
+  color: white;
+  width: 40%;
+  min-height: 100px;
+}
+
+.content h1 span {
+  color: #077b32;
+  text-shadow: 0 0 10px #077b32;
+}
+.content .typewriter {
+  font-size: 30px;
+  font-weight: 600;
+}
+.content span {
+  color: #077b32;
+}
+
+.content p {
+  margin: 10px 0;
+  font-size:15px; 
+}
+
+
+.content button {
+  width: 50%;
+  height: 6vh;
+  margin: 30px;
+  background-color: #077b32;
+  color: white;
+  border: none;
+  font-weight: 700;
+  border-radius: 5px;
+  transition: 0.2s ;
+}
+.content button:hover {
+  scale: 1.1;
+  color: #077b32;
+  border: 2px solid #077b32;
+  background-color: transparent;
+  font-weight: 700;
+  box-shadow: 0 0 40px #077b32;
+}
+@media (max-width: 884px) {
+  nav .logo {
+    position: absolute;
+    top: 16px;
+    left: 15px;
+    font-size: 1.5rem;
+  }
+  .main-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-container .content {
+    width: 80%;
+  }
+  .social-links i {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+  }
+  .main-container .image {
+    z-index: -1;
+    width: 50%;
+    height: 60%;
+  }
+}
+@media (max-width: 440px) {
+  .main-container .image {
+    width: 50%;
+    height: 60%;
+    margin-bottom: 0px;
+  }
+  .main-container .content {
+    width: 80%;
+  }
+  .main-container button {
+    margin-top: 15px;
+  }
+}
